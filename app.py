@@ -11,7 +11,7 @@ from datetime import datetime
 import time
 
 # Get the current directory
-current_dir = Path(__file__).parent
+current_dir = Path.cwd()
 
 # Création du dossier assets s'il n'existe pas
 assets_dir = current_dir / 'assets'
@@ -92,10 +92,10 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-# Header avec titre simple
+# Header with logo and title
 st.markdown("""
     <div class="header-container">
-        <h1 class="app-title"><span style="font-family: sans-serif;">&#x2764;&#xFE0F;</span> Prédiction de Maladies Cardiaques</h1>
+        <h1><span style="font-family: sans-serif;">&#x2764;&#xFE0F;</span> Prédiction de Maladies Cardiaques</h1>
     </div>
 """, unsafe_allow_html=True)
 
