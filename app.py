@@ -24,6 +24,8 @@ import plotly.graph_objects as go
 # Ajoutez ces imports au début de votre fichier (dans la section des imports)
 from fpdf import FPDF 
 
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
                # Pour les calculs numériques
             # Pour la génération de PDF
                      # Pour les pauses
